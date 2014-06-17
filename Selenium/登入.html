@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://fgc.heapthings.com/" />
+<title>登入</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">登入</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=登入</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>test1@fcu.edu.tw</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>test1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[2]/div[2]/div</td>
+	<td>登入完成<br /> <br /> 3秒後自動跳轉...<br /> [若瀏覽器沒有自動跳轉，請點擊此處]</td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>首頁 - 屯門遊樂局</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h3</td>
+	<td>屯門遊樂局是什麼？能吃嗎？</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=test1</td>
+	<td>test1</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=test1</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
